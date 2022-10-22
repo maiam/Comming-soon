@@ -22,21 +22,21 @@ function updateElapsedTime() {
   }
 
   if (newhour < 10) {
-    hourEl.innerText = ": 0" + newhour;
+    hourEl.innerText = " 0" + newhour;
   } else {
-    hourEl.innerText = ": " + newhour;
+    hourEl.innerText = " " + newhour;
   }
 
   if (newMinute < 10) {
-    minuteEl.innerText = ": 0" + newMinute;
+    minuteEl.innerText = " 0" + newMinute;
   } else {
-    minuteEl.innerText = ": " + newMinute;
+    minuteEl.innerText = " " + newMinute;
   }
 
   if (newSecond < 10) {
-    secondEl.innerText = ": 0" + newSecond;
+    secondEl.innerText = " 0" + newSecond;
   } else {
-    secondEl.innerText = ": " + newSecond;
+    secondEl.innerText = " " + newSecond;
   }
 
   setTimeout(() => {

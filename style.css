@@ -66,8 +66,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
+}
 
+.l-main {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 .primary-content > h4 {
@@ -84,13 +90,13 @@ h1 {
   margin-inline: 1.5rem;
 }
 
-.primary-content-time {
-  position: relative;
-  font-size: 4rem;
-  color: chocolate;
 
-  margin-top: 3rem;
-  padding: 3rem 4.2rem 4.2rem 4.2rem;
+.clock {
+  display: flex;
+  width: 27rem;
+  gap: 0.7rem;
+  padding: 3rem;
+
 
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
@@ -101,37 +107,28 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.primary-content-time-text {
-  width: 100%;
-  font-size: 1.5rem;
-  padding: 10px 0;
-  color: rgba(5, 39, 85, 0.3);
+.clock div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.days {
-  position: absolute;
-  bottom: 30px;
-  left: 75px;
+.clock span{
+  padding: 0.5rem;
+  font-size: 4rem;
+  color: tomato;
+
+  opacity: 0.8;
 }
 
-.hours {
-  position: absolute;
-  bottom: 30px;
-  left: 225px;
+.clock .text {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1;
+  text-align: center;
 }
-
-.minutes {
-  position: absolute;
-  bottom: 30px;
-  left: 365px;
-}
-
-.seconds {
-  position: absolute;
-  bottom: 30px;
-  left: 505px;
-}
-
 
 @media screen and (width < 680px) {
   a, p {
@@ -141,37 +138,13 @@ h1 {
     font-size: 2.8rem;
   }
 
-  .primary-content-time {
-    font-size: 2.2rem;
-    margin-top: 1.5rem;
-   padding: 1.5rem 2.2rem 2.2rem 2.2rem;
-  }
-  
-  .primary-content-time-text {
-    font-size: 1rem;
+  .clock {
+    width: 22rem;
+    padding: 1.5rem 1rem;
   }
 
-  .days {
-    position: absolute;
-    bottom: 15px;
-    left: 40px;
+  .clock span {
+    font-size: 2rem;
   }
-  
-  .hours {
-    position: absolute;
-    bottom: 15px;
-    left: 120px;
-  }
-  
-  .minutes {
-    position: absolute;
-    bottom: 15px;
-    left: 200px;
-  }
-  
-  .seconds {
-    position: absolute;
-    bottom: 15px;
-    left: 275px;
-  }
+
 }
