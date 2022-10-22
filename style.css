@@ -140,7 +140,7 @@ h1 {
   }
 
   .clock {
-    width: 22rem;
+    width: 17rem;
     padding: 1.5rem 1rem;
   }
 
@@ -148,7 +148,30 @@ h1 {
     font-size: 2rem;
   }
 
+  .clock .text {
+    font-size: 0.8rem;
+  }
+
 }
+
+@media screen and (width < 400px) {
+  a, p {
+    font-size: 0.6rem
+  }
+  .primary-content > h1 {
+    font-size: 2.5rem;
+  }
+
+  .clock {
+    width: 16rem;
+  }
+
+  .clock span {
+    font-size: 1.8rem;
+  }
+ 
+}
+
 
 .l-footer {
   height: 50vh;
